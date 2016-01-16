@@ -1,0 +1,57 @@
+[
+	{
+		"id": 1,
+		"name": "Taunusstein",
+		"country": "Deutschland",
+		"coords": {
+			"lat": 50.1575163,
+			"lng": 8.1003803
+		},
+		"contentPath": "content/locations/location-1.md",
+		"date": "2016-01-17T12:00:00"
+	},
+	{
+		"id": 2,
+		"name": "Frankfurt",
+		"country": "Deutschland",
+		"coords": {
+			"lat": 50.0230151,
+			"lng": 8.530615
+		},
+		"contentPath": "content/locations/location-2.md",
+		"date": "2016-02-26T14:00:00"
+	},
+	{
+		"id": 3,
+		"name": "Dubai",
+		"country": "Vereinigte Arabische Emirate",
+		"coords": {
+			"lat": 25.2504248,
+			"lng": 55.362635
+		},
+		"contentPath": "content/locations/location-3.md",
+		"date": "2016-02-26T22:30:00"
+	},
+	{
+		"id": 4,
+		"name": "Sydney Opera House",
+		"country": "Australien",
+		"coords": {
+			"lat": -33.863554,
+			"lng": 151.2088647
+		},
+		"contentPath": "content/locations/location-4.md",
+		"date": "2016-02-28T11:00:00"
+	},
+	{
+		"id": 5,
+		"name": "Teheran",
+		"country": "Iran",
+		"coords": {
+			"lat": 35.6967326,
+			"lng": 51.2093932
+		},
+		"contentPath": "content/locations/location-5.md",
+		"date": "2016-05-16T12:00:00"
+	}
+]

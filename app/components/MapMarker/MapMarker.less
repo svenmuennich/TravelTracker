@@ -1,0 +1,57 @@
+// MapMarker base sizes
+@mapMarkerBorderWidth: 2px;
+@mapMarkerCircleRadius: 10px;
+@mapMarkerStickHeight: 15px;
+
+@mapMarkerCircleDiameter: (2 * @mapMarkerCircleRadius);
+@mapMarkerStickWidth: @mapMarkerBorderWidth;
+@mapMarkerHeight: (2 * @mapMarkerCircleRadius + @mapMarkerStickHeight);
+
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+.mapMarker {
+	position: absolute;
+	left: -@mapMarkerCircleRadius;
+	top: -@mapMarkerHeight;
+	width: @mapMarkerCircleDiameter;
+	height: @mapMarkerHeight;
+}
+
+.mapMarkerCircle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: @mapMarkerCircleDiameter;
+	height: @mapMarkerCircleDiameter;
+	padding: 0;
+	background-color: white;
+	border: @mapMarkerBorderWidth solid #f44336;
+	border-radius: @mapMarkerCircleDiameter;
+	cursor: pointer;
+	box-shadow: 0 0 0 1px white;
+}
+.mapMarkerCircleHover {
+	composes: mapMarkerCircle;
+	border: @mapMarkerBorderWidth solid #3f51b5;
+	color: #f44336;
+}
+
+.mapMarkerStick {
+	position: absolute;
+	left: @mapMarkerCircleRadius - (@mapMarkerStickWidth / 2);
+	top: @mapMarkerCircleDiameter;
+	width: @mapMarkerStickWidth;
+	height: @mapMarkerStickHeight;
+	background-color: #f44336;
+}
+.mapMarkerStickHover {
+	composes: mapMarkerStick;
+	background-color: #3f51b5;
+}
+.mapMarkerStickShadow {
+	composes: mapMarkerStick;
+	background-color: #f44336;
+	box-shadow: 0 0 0 1px white;
+}
